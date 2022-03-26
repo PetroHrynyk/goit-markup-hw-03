@@ -10,58 +10,63 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
 
 </head>
 
 <body>
     <!-- шапка -->
-    <header>
+    <div class="container">
+    <header class="main-header">
+        
         <!-- навігація -->
-        <nav>
+        <nav class="main-nav">
             <a href="./index.html" class="logo">Web<span class="logo logoblack">Studio</span> </a>
 
 
             <ul class="site-nav list">
-                <li><a href="./index.html" class="link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="#contacts" class="link">Контакты</a></li>
+                <li class="site-nav-item"><a href="./index.html" class="link current">Студия</a></li>
+                <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li class="site-nav-item"><a href="#contacts" class="link">Контакты</a></li>
             </ul>
 
         </nav>
         <ul class="contact-header list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="contact-header-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li class="contact-header-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
+  
+    </header>  
+</div>
 
-    </header>
     <main>
         <!-- Герой -->
-        <section class="hero">
+        <section class="hero container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="order-button button">Заказать услугу</button>
         </section>
 
         <!-- Преимущества -->
-        <section class="advantages">
+        <section class="advantages container">
             <h2 hidden>Преимущества</h2>
             <ul class="list advantages-list">
-                <li>
+                <li class="advantages-list-item">
                     <h3 class="advantages-title">Внимание к деталям</h3>
                     <p class="advantages-description">Идейные соображения, а также начало повседневной работы по
                         формированию позиции.</p>
                 </li>
-                <li>
+                <li class="advantages-list-item">
                     <h3 class="advantages-title">Пунктуальность</h3>
                     <p class="advantages-description">Задача организации, в особенности же рамки и место обучения кадров
                         влечет за собой.</p>
                 </li>
-                <li>
+                <li class="advantages-list-item">
                     <h3 class="advantages-title">Планирование</h3>
                     <p class="advantages-description">Равным образом консультация с широким активом в значительной
                         степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="advantages-list-item">
                     <h3 class="advantages-title">Современные технологии</h3>
                     <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация
                         плановых заданий.</p>
@@ -70,15 +75,17 @@
 
         </section>
         <section class="we-do">
-            <h2 class="we-do-title">Чем мы занимаемся</h2>
+            <div class="container">
+                <h2 class="we-do-title">Чем мы занимаемся</h2>
             <ul class="list we-do-list">
-                <li> <img src="./images/img-laptop.jpg" width="370" height="294" alt="laptop">
+                <li class="we-do-list-item"> <img class="image" src="./images/img-laptop.jpg" width="370" height="294" alt="laptop">
                 </li>
-                <li> <img src="./images/img-phone.jpg" width="370" height="294" alt="phone">
+                <li class="we-do-list-item"> <img class="image" src="./images/img-phone.jpg" width="370" height="294" alt="phone">
                 </li>
-                <li><img src="./images/img-tab.jpg" width="370" height="294" alt="tablet">
+                <li class="we-do-list-item"> <img class="image" src="./images/img-tab.jpg" width="370" height="294" alt="tablet">
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- Команда -->
