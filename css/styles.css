@@ -47,7 +47,18 @@ body {
 	padding: 0;
 	margin: 0;
 }
-
+.visually-hiden {
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		margin: -1px;
+	}
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link.current {
@@ -152,20 +163,7 @@ body {
 	margin-right: auto;
 	margin-bottom: 200px; */
 }
-.filter-button {
-	font-family: inherit;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-	/* color: var(--accent-reverse); */
-	background-color: var(--button-bg);
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 1.87;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.06em;
-	border: 0px;
-	border-radius: 4px;
-}
+
 .list-name {
 	font-weight: bold;
 	font-size: 18px;
@@ -274,6 +272,8 @@ margin-left: 30px;
 .logowhite {
 	color: #ffffff;
 }
+
+/* --------------------------------FOOTER--------------------------------------- */
 .footer {
 	background-color: var(--hero-bg);
 	padding-top: 60px;
@@ -295,7 +295,7 @@ margin-left: 30px;
 	color: rgba(255, 255, 255, 0.6);
 }
 .tel {
-	display: block;
+	display: inline-block;
 	margin-top: 9px;
 }
 .footer .link:hover,
@@ -305,3 +305,51 @@ margin-left: 30px;
 .address {
 	font-style: normal;
 }
+/* -----------------------------------------------PORTFOLIO----------------------------------------------- */
+.samples{
+	padding-top: 112px;
+	padding-bottom: 112px;
+}
+.filter {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+	margin-right: 8px;
+	
+}
+.filter-button {
+	font-family: inherit;
+	/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+	/* color: var(--accent-reverse); */
+	background-color: var(--button-bg);
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.87;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	border: 0px;
+	border-radius: 4px;
+	min-width: 73px;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+.samples-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+.samples-list-item{
+	border: 1px solid #EEEEEE;
+	flex-basis: calc(100% / 3-30px);
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.samples-text-container{
+	margin: 20px 24px;
+}
+
