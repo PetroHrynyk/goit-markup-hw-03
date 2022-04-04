@@ -28,7 +28,12 @@ body {
 .link {
 	text-decoration: none;
 } 
-/* logo */
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/* ------------------------LOGO--------------------------- */
 .site-nav {
 	display: flex;
 	align-items: center;
@@ -155,7 +160,7 @@ body {
 .hero-button:focus {
 	background-color: #188CE8;
 }
-.skills {
+.section {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
@@ -184,7 +189,7 @@ body {
 	width: calc((100% - 3 * 30px) / 4);
 }
 
-.skills-list h3 {
+.skills-list-title {
 	margin-top: 0;
 	margin-bottom: 10px;
 
@@ -203,11 +208,11 @@ body {
 	line-height: 1.71;
 }
 
-/* work areas section */
-.work-areas {
+
+.work-areas.section {
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-bottom: 94px;
+	padding-top: 0;
 }
 
 .work-areas-list {
