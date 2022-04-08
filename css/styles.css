@@ -13,6 +13,22 @@ body {
 	letter-spacing: 0.03em;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding-left: 0;
+}
+
 .page-header {
 	background-color: #ffffff;
 	border-bottom: 1px solid #ececec;
@@ -52,12 +68,11 @@ body {
 }
 
 /* header */
-.list {
+/* .list {
 	padding: 0;
 	margin: 0;
-
 	list-style: none;
-}
+} */
 
 
 .nav {
@@ -279,10 +294,10 @@ body {
 }
 
 /* -----------------------------Portfolio ------------------------------------ */
-.projects {
+/* .projects {
 	padding-top: 94px;
 	padding-bottom: 94px;
-}
+} */
 
 .filter-list {
 	padding-bottom: 50px;
@@ -323,21 +338,25 @@ body {
 .projects-list {
 	display: flex;
 	flex-wrap: wrap;
-}
+	margin-top: -30px;
+	margin-left: -30px;
+	}
+
 
 .projects-list-item {
-	width: calc((100% - 60px) / 3);
-	margin-right: 30px;
-	margin-bottom: 30px;
+	flex-basis: calc(100% / 3 - 30px);
+	/* width: calc((100% - 90px) / 3); */
+	margin-top: 30px;
+	margin-left: 30px;
 }
-
+ /* 
 .projects-list-item:nth-child(3n) {
 	margin-right: 0;
 }
 
 .projects-list-item:nth-last-child(-n + 3) {
 	margin-bottom: 0;
-}
+} */
 
 .projects-list-item>img {
 	display: block;
