@@ -73,7 +73,10 @@ ol {
 	margin: 0;
 	list-style: none;
 } */
-
+.header-container {
+	display: flex;
+	align-items: center;
+}
 
 .nav {
 	display: flex;
@@ -300,7 +303,7 @@ ol {
 } */
 
 .filter-list {
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
 }
