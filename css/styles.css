@@ -358,8 +358,11 @@ ol {
 	margin-bottom: 0;
 } */
 
-.projects-list-item>img {
+/* .projects-list-item> */
+img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .projects-list-item .text {
